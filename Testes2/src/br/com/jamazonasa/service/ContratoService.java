@@ -10,10 +10,27 @@ public class ContratoService implements IContratoService {
         this.contratoDao = dao;
     }
 
+
+
     @Override
     public String salvar() {
         contratoDao.salvar();
         return "Sucesso";
+    }
+
+    @Override
+    public String buscar() {
+        return "Cliente encontrado";
+    }
+
+    @Override
+    public String excluir() {
+        return "Cliente excluido";
+    }
+
+    @Override
+    public String atualizar() {
+        return "Cliente atualizado";
     }
 
 }
